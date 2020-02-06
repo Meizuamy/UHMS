@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="uhms-oauth-server" target="1.8" />
+      <module name="uhms-parent" target="1.8" />
+      <module name="uhms-user-api" target="1.8" />
+      <module name="uhms-user-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
