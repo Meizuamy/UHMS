@@ -8,13 +8,24 @@
     <artifactId>uhms-oauth-server</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <packaging>jar</packaging>
+
+    <name>uhms-oauth-server</name>
+    <description>provider oauth identity server</description>
+
     <parent>
         <groupId>org.uhms</groupId>
         <artifactId>uhms-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
+        <relativePath>../uhms-parent/pom.xml</relativePath>
     </parent>
 
-    <packaging>pom</packaging>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-oauth2</artifactId>
+        </dependency>
+    </dependencies>
 
 
 </project>
