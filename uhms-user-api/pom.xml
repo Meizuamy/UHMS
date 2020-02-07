@@ -17,8 +17,8 @@
         <relativePath>../uhms-parent/pom.xml</relativePath>
     </parent>
 
+    <dependencies>
 
-
-
+    </dependencies>
 
 </project>

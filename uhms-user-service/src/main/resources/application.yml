@@ -1,6 +1,21 @@
 server:
   port: 8081
 
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.56.103:3306/uhms?useUnicode=true$characterEncoding=UTF-8$allowMultQueries=true&useSSL=false
+    username: root
+    password: 123456
+    platform: mysql
+
+mybatis:
+  type-aliases-package: org.uhms.user.models
+  mapper-locations: classpath:/mybatis-mappers/*
+  configuration:
+    mapUnderscoreToCamelCase: true
+
+
 security:
   oauth2:
     authorization:
