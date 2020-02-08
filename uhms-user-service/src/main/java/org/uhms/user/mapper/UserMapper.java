@@ -24,7 +24,8 @@ public interface UserMapper {
     @Select("select * from t_user")
     List<User> findAll();
 
-    @Select("select * from t_user where name like '%${name}%'")
+//    @Select("select * from t_user where name like '%${name}%' ")
+    @Select("select * from t_user where name like concat('%',#{name},'%')")
     List<User> findUserByName(String name);
 
     @Select("select count(*) from t_user")

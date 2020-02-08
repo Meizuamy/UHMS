@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/uhms-parent/uhms-parent.iml" filepath="$PROJECT_DIR$/uhms-parent/uhms-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/uhms-user-api/uhms-user-api.iml" filepath="$PROJECT_DIR$/uhms-user-api/uhms-user-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/uhms-user-service/uhms-user-service.iml" filepath="$PROJECT_DIR$/uhms-user-service/uhms-user-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uhms-zuul-getway/uhms-zuul-getway.iml" filepath="$PROJECT_DIR$/uhms-zuul-getway/uhms-zuul-getway.iml" />
     </modules>
   </component>
 </project>
