@@ -9,10 +9,12 @@
         <module name="uhms-oauth-server" />
         <module name="uhms-zuul-getway" />
         <module name="uhms-user-service" />
+        <module name="uhms-eureka-server" />
         <module name="uhms-user-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="uhms-eureka-server" target="1.8" />
       <module name="uhms-oauth-server" target="1.8" />
       <module name="uhms-parent" target="1.8" />
       <module name="uhms-user-api" target="1.8" />
@@ -22,6 +24,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="uhms-eureka-server" options="-parameters" />
       <module name="uhms-oauth-server" options="-parameters" />
       <module name="uhms-parent" options="-parameters" />
       <module name="uhms-user-api" options="-parameters" />

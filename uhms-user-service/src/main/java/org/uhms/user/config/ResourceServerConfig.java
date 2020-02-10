@@ -12,11 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
     @Override
     public void configure(HttpSecurity http) throws Exception {
-        http.exceptionHandling()
-                .authenticationEntryPoint((request,response,authException)-> response.sendError(HttpServletResponse.SC_UNAUTHORIZED))
-                .and()
-                .authorizeRequests()
-                .anyRequest()
-                .authenticated();
+        http.authorizeRequests()
+                .antMatchers("/").hasRole("admin")
+                .antMatchers("/user/**").hasRole("admin");
     }
 }

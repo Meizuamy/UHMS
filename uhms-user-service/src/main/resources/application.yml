@@ -2,6 +2,8 @@ server:
   port: 8081
 
 spring:
+  application:
+    name: user-service
   profile:
     active: dev
   datasource:
@@ -10,6 +12,15 @@ spring:
     username: root
     password: 123456
     platform: mysql
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
 
 mybatis:
   type-aliases-package: org.uhms.user.models

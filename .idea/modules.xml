@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/UHMS.iml" filepath="$PROJECT_DIR$/.idea/UHMS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/uhms-eureka-server/uhms-eureka-server.iml" filepath="$PROJECT_DIR$/uhms-eureka-server/uhms-eureka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/uhms-oauth-server/uhms-oauth-server.iml" filepath="$PROJECT_DIR$/uhms-oauth-server/uhms-oauth-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/uhms-parent/uhms-parent.iml" filepath="$PROJECT_DIR$/uhms-parent/uhms-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/uhms-user-api/uhms-user-api.iml" filepath="$PROJECT_DIR$/uhms-user-api/uhms-user-api.iml" />

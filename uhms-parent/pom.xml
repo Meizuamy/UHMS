@@ -21,6 +21,7 @@
         <module>../uhms-user-api</module>
         <module>../uhms-user-service</module>
         <module>../uhms-zuul-getway</module>
+        <module>../uhms-eureka-server</module>
     </modules>
 
     <!-- 依赖版本管理 -->
@@ -53,6 +54,8 @@
                 <artifactId>spring-boot-starter-test</artifactId>
                 <version>${spring.boot.version}</version>
             </dependency>
+
+            <!-- spring security and oauth-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-security</artifactId>
@@ -64,9 +67,22 @@
                 <version>${spring.security.version}</version>
             </dependency>
 
+            <!--zuul 网关依赖-->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
+                <version>${spring.cloud.version}</version>
+            </dependency>
+
+            <!--Eureka 依赖-->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+                <version>${spring.cloud.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
                 <version>${spring.cloud.version}</version>
             </dependency>
 
@@ -76,12 +92,15 @@
                 <artifactId>spring-cloud-starter-oauth2</artifactId>
                 <version>${spring.cloud.version}</version>
             </dependency>
+
             <!--Mysql驱动-->
             <dependency>
                 <groupId>mysql</groupId>
                 <artifactId>mysql-connector-java</artifactId>
                 <version>${mysql.version}</version>
             </dependency>
+
+            <!--mybatis spring starter 依赖-->
             <dependency>
                 <groupId>org.mybatis.spring.boot</groupId>
                 <artifactId>mybatis-spring-boot-starter</artifactId>
