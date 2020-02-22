@@ -48,6 +48,14 @@
                 <artifactId>spring-boot-starter-actuator</artifactId>
                 <version>${spring.boot.version}</version>
             </dependency>
+
+            <!--网页模板引擎-->
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-thymeleaf</artifactId>
+                <version>${spring.boot.version}</version>
+            </dependency>
+
             <!--测试框架-->
             <dependency>
                 <groupId>org.springframework.boot</groupId>

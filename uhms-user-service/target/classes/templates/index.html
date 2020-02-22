@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+    <link type="text/css" th:href="@{/layui/css/layui.css}" rel="stylesheet">
+    <link type="text/css" th:href="@{/local/css/index.css}" rel="stylesheet">
+</head>
+<body>
+<div>
+    <ul class="layui-nav">
+        <li class="layui-nav-item">
+            <a href="">控制台<span class="layui-badge">9</span></a>
+        </li>
+        <li class="layui-nav-item">
+            <a href="">个人中心<span class="layui-badge-dot"></span></a>
+        </li>
+        <li class="layui-nav-item">
+            <a href=""><img src="//t.cn/RCzsdCq" class="layui-nav-img">我</a>
+            <dl class="layui-nav-child">
+                <dd><a href="javascript:;">修改信息</a></dd>
+                <dd><a href="javascript:;">安全管理</a></dd>
+                <dd><a href="javascript:;">退了</a></dd>
+            </dl>
+        </li>
+    </ul>
+</div>
+
+<div class="layui-container">
+    <div class="layui-col-md3">
+        <ul class="layui-nav layui-nav-tree" lay-filter="test">
+            <!-- 侧边导航: <ul class="layui-nav layui-nav-tree layui-nav-side"> -->
+            <li class="layui-nav-item layui-nav-itemed">
+                <a href="javascript:;">默认展开</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="javascript:;">选项1</a></dd>
+                    <dd><a href="javascript:;">选项2</a></dd>
+                    <dd><a href="">跳转</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item">
+                <a href="javascript:;">解决方案</a>
+                <dl class="layui-nav-child">
+                    <dd><a href="">移动模块</a></dd>
+                    <dd><a href="">后台模版</a></dd>
+                    <dd><a href="">电商平台</a></dd>
+                </dl>
+            </li>
+            <li class="layui-nav-item"><a href="">产品</a></li>
+            <li class="layui-nav-item"><a href="">大数据</a></li>
+        </ul>
+    </div>
+    <div class="layui-col-md9">
+        <div class="user-data-container">
+            <div>
+                <button class="layui-btn">
+                    <a th:href="@{/create}">创建用户</a>
+                </button>
+            </div>
+            <table class="layui-table">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>姓名</th>
+                    <th>地址</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr th:if="${users.size()} eq 0">
+                    <td colspan="3">没有用户信息！</td>
+                </tr>
+                <tr th:each="user : ${users}">
+                    <th>
+                        <a th:href="@{'/user/'+${user.id}}" th:text="${user.id}"></a>
+                    </th>
+                    <th th:text="${user.name}"></th>
+                    <th th:text="${user.address}"></th>
+                    <td>
+                        <button class="layui-btn layui-btn-sm layui-btn-normal">
+                            <a th:href="@{'/delete/'+${user.id}}">删除</a>
+                        </button>
+                        <button class="layui-btn layui-btn-sm layui-btn-danger">
+                            <a th:href="@{'/modify/'+${user.id}}">修改</a>
+                        </button>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="layui-col-md12" th:insert="~{./layout/footer :: copy}"></div>
+</div>
+</body>
+</html>
