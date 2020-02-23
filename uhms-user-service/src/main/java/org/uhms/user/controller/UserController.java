@@ -2,13 +2,15 @@ package org.uhms.user.controller;
 
 import javax.annotation.Resource;
 
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageInfo;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.*;
 import org.uhms.user.models.User;
 import org.uhms.user.services.serviceImpl.UserServiceImpl;
 
+import java.util.List;
 
 
 @Controller
@@ -18,28 +20,32 @@ public class UserController {
     private UserServiceImpl userService;
 
     @GetMapping(value = "/")
-    public String index(Model model){
-        model.addAttribute("users",userService.getAllUser());
-        return "index";
-    }
-    @GetMapping(value = "/create")
-    public String createIndex(){
-        return "createAndUpdate";
-    }
-
-    @GetMapping(value = "/update")
-    public String updateIndex(){
-        return "createAndUpdate";
+    @ResponseBody
+    public List<User> index(){
+        return userService.getAllUser();
     }
 
     @PostMapping(value = "/create")
-    public String createUser(User user){
-        userService.save(user);
-        return "redirect:/";
+    @ResponseBody
+    public Integer createUser(@RequestBody User user){
+        return userService.save(user);
     }
-    @PostMapping(value = "/update")
-    public String updateUser(User user){
-        userService.updateUser(user);
-        return "redirect:/";
+
+    @PutMapping(value = "/update")
+    @ResponseBody
+    public Integer updateUser(@RequestBody User user){
+       return userService.updateUser(user);
+    }
+
+    @GetMapping(value = "/list")
+    @ResponseBody
+    public List<User> getUserPage(@RequestParam(name = "page",defaultValue = "0")int page,@RequestParam(name = "size",defaultValue = "2")int size){
+        return userService.pageUserList(page,size);
+    }
+
+    @GetMapping(value = "/delete")
+    @ResponseBody
+    public Integer deleteUser(@RequestParam(value = "id")Long id){
+        return userService.deleteUser(id);
     }
 }

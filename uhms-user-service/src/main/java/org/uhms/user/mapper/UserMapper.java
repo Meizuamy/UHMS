@@ -13,13 +13,13 @@ public interface UserMapper {
 
     @Insert("insert into t_user (name,address) values (#{name},#{address})")
     @Options(useGeneratedKeys = true,keyColumn = "id")
-    void insertUser(User user);
+    Integer insertUser(User user);
 
     @Delete("delete from t_user where id = #{id}")
-    void deleteUserById(Long id);
+    Integer deleteUserById(Long id);
 
     @Update("update t_user set name=#{name},address=#{address} where id=#{id}")
-    void updateUserById(User user);
+    Integer updateUserById(User user);
 
     @Select("select * from t_user")
     List<User> findAll();
@@ -30,4 +30,7 @@ public interface UserMapper {
 
     @Select("select count(*) from t_user")
     Long allCount();
+
+    @Select("select * from t_user limit #{offset},#{limit}")
+    List<User> pageUserList(int offset, int limit);
 }

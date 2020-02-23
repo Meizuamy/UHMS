@@ -1,8 +1,6 @@
 server:
   port: 8081
 
-
-
 spring:
   application:
     name: user-service
@@ -23,13 +21,13 @@ spring:
     content-type: text/html
     cache: false
 
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8761/eureka/
-  instance:
-    hostname: localhost
-    prefer-ip-address: true
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8761/eureka/
+#  instance:
+#    hostname: localhost
+#    prefer-ip-address: true
 
 mybatis:
   type-aliases-package: org.uhms.user.models
@@ -38,12 +36,12 @@ mybatis:
     mapUnderscoreToCamelCase: true
 
 
-security:
-  oauth2:
-    authorization:
-      check-token-access: http://localhost:8082/oauth/check_token
-    resource:
-      id: order-service
-      user-info-uri: http://localhost:8082/user
-      token-info-uri: http://localhost:8082/oauth/check_token
-      prefer-token-info: false
+#security:
+#  oauth2:
+#    authorization:
+#      check-token-access: http://localhost:8082/oauth/check_token
+#    resource:
+#      id: order-service
+#      user-info-uri: http://localhost:8082/user
+#      token-info-uri: http://localhost:8082/oauth/check_token
+#      prefer-token-info: false

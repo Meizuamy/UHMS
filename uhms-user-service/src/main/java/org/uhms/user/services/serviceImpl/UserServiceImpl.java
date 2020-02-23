@@ -1,17 +1,20 @@
 package org.uhms.user.services.serviceImpl;
 
+import com.github.pagehelper.Page;
+import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.uhms.user.mapper.UserMapper;
 import org.uhms.user.models.User;
 import org.uhms.user.services.IUserService;
 
+import javax.annotation.Resource;
 import java.util.List;
 
 @Service
 public class UserServiceImpl implements IUserService {
 
-    @Autowired
+    @Resource
     private UserMapper userMapper;
 
     @Override
@@ -20,12 +23,22 @@ public class UserServiceImpl implements IUserService {
     }
 
     @Override
-    public void save(User user) {
-        userMapper.insertUser(user);
+    public Integer save(User user) {
+        return userMapper.insertUser(user);
     }
 
     @Override
-    public void updateUser(User user) {
-        userMapper.updateUserById(user);
+    public Integer updateUser(User user) {
+       return userMapper.updateUserById(user);
+    }
+
+    @Override
+    public List<User> pageUserList(int page,int size) {
+        return userMapper.pageUserList(page*size,size);
+    }
+
+    @Override
+    public Integer deleteUser(Long id) {
+        return userMapper.deleteUserById(id);
     }
 }

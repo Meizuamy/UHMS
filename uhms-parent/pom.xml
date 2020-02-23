@@ -31,6 +31,7 @@
         <spring.cloud.version>2.2.0.RELEASE</spring.cloud.version>
         <mysql.version>8.0.19</mysql.version>
         <mybatis.version>2.1.1</mybatis.version>
+        <mybatis.pagehelper.version>5.1.10</mybatis.pagehelper.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
@@ -38,6 +39,7 @@
     <!-- 公共依赖管理 -->
     <dependencyManagement>
         <dependencies>
+
             <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-web</artifactId>
@@ -108,11 +110,17 @@
                 <version>${mysql.version}</version>
             </dependency>
 
-            <!--mybatis spring starter 依赖-->
+            <!--mybatis spring starter and pagehelper dependency-->
             <dependency>
                 <groupId>org.mybatis.spring.boot</groupId>
                 <artifactId>mybatis-spring-boot-starter</artifactId>
                 <version>${mybatis.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper</artifactId>
+                <version>${mybatis.pagehelper.version}</version>
             </dependency>
 
         </dependencies>
