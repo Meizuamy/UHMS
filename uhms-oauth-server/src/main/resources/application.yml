@@ -3,6 +3,13 @@ spring:
     active: dev
   application:
     name: oauth2-server
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.56.103:3306/uhms?useUnicode=true$characterEncoding=UTF-8$allowMultQueries=true&useSSL=false
+    username: root
+    password: 123456
+    platform: mysql
+
 
 #eureka:
 #  client:
