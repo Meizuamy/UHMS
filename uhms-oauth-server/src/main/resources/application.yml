@@ -9,6 +9,8 @@ spring:
     username: root
     password: 123456
     platform: mysql
+  redis:
+    url: redis://192.168.56.103:6379
 
 
 #eureka:
