@@ -5,12 +5,16 @@ spring:
     name: oauth2-server
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://192.168.56.103:3306/uhms?useUnicode=true$characterEncoding=UTF-8$allowMultQueries=true&useSSL=false
+    url: jdbc:mysql://192.168.122.128:3306/uhms?useUnicode=true$characterEncoding=UTF-8$allowMultQueries=true&useSSL=false
     username: root
     password: 123456
     platform: mysql
   redis:
-    url: redis://192.168.56.103:6379
+    url: redis://192.168.122.128:6379
+  thymeleaf:
+    mode: HTML5
+    prefix: classpath:/templates/ 
+    suffix: .html
 
 
 #eureka:

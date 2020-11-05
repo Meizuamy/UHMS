@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <title>登录</title>
+        <meta http-equiv="Content-Type" content="text/html;chatset=utf-8" />
+    </head>
+    <body>
+        <div id="login">
+            <h2>Acced Form</h2>
+            <div class="login-top">
+                <h1>LOGIN FORM</h1>
+                <form action="/auth/form" method="POST">
+                    <input type="text" name="username" id="username" placeholder="username">
+                    <input type="text" name="password" id="password" placeholder="password">
+                    <div style="display: flex;">
+                        <input type="text" name="captcha" id="captcha" placeholder="captcha">
+                        <img src="/captcha.jpg" alt="captcha" height="50px" width="150px" style="margin-left: 20px;">
+                    </div>
+                    <div class="forgot">
+                        <a href="#">forgot Password</a>
+                        <input type="submit" value="Login">
+                    </div>
+                </form>
+            </div>
+            <div class="login-bottom">
+                <h3>New User &nbsp;<a href="#">Register</a>&nbsp; Here</h3>
+            </div>
+        </div>
+    </body>
+</html>
