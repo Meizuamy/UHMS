@@ -22,7 +22,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5fad3f7f-b256-4079-82f6-a5cce24d4029" name="Default Changelist" comment="" />
+    <list default="true" id="5fad3f7f-b256-4079-82f6-a5cce24d4029" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uhms-zuul-getway/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/uhms-zuul-getway/README.md" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -202,7 +205,7 @@
       <workItem from="1616309925480" duration="596000" />
       <workItem from="1616420704273" duration="614000" />
       <workItem from="1616468242846" duration="7163000" />
-      <workItem from="1616493472806" duration="618000" />
+      <workItem from="1616493472806" duration="1428000" />
     </task>
     <servers />
   </component>

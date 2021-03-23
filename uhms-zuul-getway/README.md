@@ -1,4 +1,4 @@
-## GetWay;
+## GetWay
 
 ### HOW TO USE
 ```shell
