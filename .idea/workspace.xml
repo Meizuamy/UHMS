@@ -23,8 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5fad3f7f-b256-4079-82f6-a5cce24d4029" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uhms-zuul-getway/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/uhms-zuul-getway/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uhms-oauth-server/uhms-oauth-server.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uhms-parent/uhms-parent.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uhms-user-api/uhms-user-api.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uhms-user-service/uhms-user-service.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/uhms-zuul-getway/uhms-zuul-getway.iml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,9 +41,6 @@
       </list>
     </option>
   </component>
-  <component name="Git.Pull.Settings">
-    <option name="BRANCH" value="master" />
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -53,6 +53,9 @@
     </file-type-list>
   </component>
   <component name="ProjectId" id="1jgj1dCIrJeXZqMAry4mJJASeqg" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -80,19 +83,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Docker.Docker Image">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="schema.sql" type="DatabaseScript" editBeforeRun="true" temporary="true" nameIsGenerated="true">
       <script-file value="$PROJECT_DIR$/uhms-user-service/src/main/resources/schema.sql" />
       <script-mode>FILE</script-mode>
