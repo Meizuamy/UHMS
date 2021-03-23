@@ -57,6 +57,7 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+<<<<<<< HEAD
 <!--        <dependency>-->
 <!--            <groupId>org.springframework.kafka</groupId>-->
 <!--            <artifactId>spring-kafka</artifactId>-->
@@ -67,6 +68,14 @@
 <!--            <artifactId>amqp-client</artifactId>-->
 <!--        </dependency>-->
 
+=======
+        <dependency>
+            <groupId>org.uhms</groupId>
+            <artifactId>uhms-user-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+>>>>>>> 311b242e3b75b871ceda0446817a1ac727257728
     </dependencies>
 
 </project>

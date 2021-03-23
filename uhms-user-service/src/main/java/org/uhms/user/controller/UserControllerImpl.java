@@ -7,6 +7,7 @@ import com.github.pagehelper.PageInfo;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.uhms.user.UserController;
 import org.uhms.user.models.User;
 import org.uhms.user.services.serviceImpl.UserServiceImpl;
 
@@ -14,7 +15,7 @@ import java.util.List;
 
 
 @Controller
-public class UserController {
+public class UserControllerImpl implements UserController {
 
     @Resource
     private UserServiceImpl userService;
@@ -43,7 +44,7 @@ public class UserController {
         return userService.pageUserList(page,size);
     }
 
-    @GetMapping(value = "/delete")
+    @GetMapping(value = "/delete/{id}")
     @ResponseBody
     public Integer deleteUser(@RequestParam(value = "id")Long id){
         return userService.deleteUser(id);

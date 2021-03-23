@@ -145,6 +145,7 @@
                 <version>${mybatis.pagehelper.version}</version>
             </dependency>
 
+<<<<<<< HEAD
             <dependency>
                 <groupId>org.springframework.kafka</groupId>
                 <artifactId>spring-kafka</artifactId>
@@ -155,6 +156,13 @@
                 <groupId>com.rabbitmq</groupId>
                 <artifactId>amqp-client</artifactId>
                 <version>5.10.0</version>
+=======
+
+            <dependency>
+                <groupId>com.github.penggle</groupId>
+                <artifactId>kaptcha</artifactId>
+                <version>2.3.2</version>
+>>>>>>> 311b242e3b75b871ceda0446817a1ac727257728
             </dependency>
 
         </dependencies>
