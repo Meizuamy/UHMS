@@ -11,7 +11,7 @@
         <groupId>org.uhms</groupId>
         <artifactId>uhms-parent</artifactId>
         <version>1.0-SNAPSHOT</version>
-        <relativePath>../uhms-parent/pom.xml</relativePath>
+        <relativePath/>
     </parent>
 
     <dependencies>

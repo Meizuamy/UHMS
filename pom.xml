@@ -17,11 +17,11 @@
     </parent>
 
     <modules>
-        <module>../uhms-oauth-server</module>
-        <module>../uhms-user-api</module>
-        <module>../uhms-user-service</module>
-        <module>../uhms-zuul-getway</module>
-        <module>../uhms-eureka-server</module>
+        <module>uhms-oauth-server</module>
+        <module>uhms-user-api</module>
+        <module>uhms-user-service</module>
+        <module>uhms-zuul-getway</module>
+        <module>uhms-eureka-server</module>
     </modules>
 
     <!-- 依赖版本管理 -->
