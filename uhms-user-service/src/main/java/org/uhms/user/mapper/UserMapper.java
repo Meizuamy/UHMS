@@ -8,7 +8,6 @@ import java.util.List;
 @Mapper
 public interface UserMapper {
 
-    @Select("select * from t_user where id=#{id}")
     User getUser(Long id);
 
     @Insert("insert into t_user (name,address) values (#{name},#{address})")

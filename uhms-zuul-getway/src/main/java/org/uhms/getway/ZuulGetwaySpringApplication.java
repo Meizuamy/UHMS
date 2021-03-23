@@ -5,6 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
+import static com.google.common.hash.Hashing.md5;
+
 @SpringBootApplication
 @EnableZuulProxy
 @EnableEurekaClient

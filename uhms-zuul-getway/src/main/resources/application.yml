@@ -1,5 +1,11 @@
 server:
   port: 8090
+  error:
+    path: /error
+    include-exception: false
+    include-stacktrace: never
+    whitelabel:
+      enabled: true
 spring:
   application:
     name: zuul-getway-service

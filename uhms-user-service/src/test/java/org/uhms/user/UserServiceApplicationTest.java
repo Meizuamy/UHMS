@@ -1,5 +1,6 @@
 package org.uhms.user;
 
+import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -16,6 +17,13 @@ public class UserServiceApplicationTest {
 
     @Resource
     UserMapper userMapper;
+
+    @Test
+    public void test_select_user_by_user_id(){
+        User user = userMapper.getUser(1L);
+        Assert.assertNotNull(user);
+        System.out.println(user);
+    }
 
     @Test
     public void contextLoad(){
