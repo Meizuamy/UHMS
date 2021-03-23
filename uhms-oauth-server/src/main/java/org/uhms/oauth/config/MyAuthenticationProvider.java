@@ -1,5 +1,7 @@
 package org.uhms.oauth.config;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.core.AuthenticationException;
@@ -12,7 +14,8 @@ import org.springframework.stereotype.Component;
 public class MyAuthenticationProvider extends DaoAuthenticationProvider {
 
     // 把构造方法注入 UserDetailService 和 PasswordEncoder
-    public MyAuthenticationProvider(UserDetailsService userDetailsService, PasswordEncoder passwordEncoder){
+    @Autowired
+    public MyAuthenticationProvider(@Qualifier("userDetailsService") UserDetailsService userDetailsService, PasswordEncoder passwordEncoder){
         this.setUserDetailsService(userDetailsService);
         this.setPasswordEncoder(passwordEncoder);
     }
