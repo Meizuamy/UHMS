@@ -29,7 +29,7 @@
         <spring.boot.version>2.5.12</spring.boot.version>
         <spring.security.version>2.4.0.RELEASE</spring.security.version>
         <spring.cloud.version>2.2.0.RELEASE</spring.cloud.version>
-        <mysql.version>8.0.19</mysql.version>
+        <mysql.version>8.0.28</mysql.version>
         <mybatis.version>2.1.1</mybatis.version>
         <mybatis.pagehelper.version>5.1.10</mybatis.pagehelper.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
