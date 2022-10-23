@@ -1,11 +1,14 @@
 package org.uhms.user.mapper;
 
-import org.apache.ibatis.annotations.*;
-import org.uhms.user.models.User;
-
-import java.text.SimpleDateFormat;
 import java.util.List;
-import java.util.logging.SimpleFormatter;
+
+import org.apache.ibatis.annotations.Delete;
+import org.apache.ibatis.annotations.Insert;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Options;
+import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.Update;
+import org.uhms.user.models.User;
 
 @Mapper
 public interface UserMapper {
