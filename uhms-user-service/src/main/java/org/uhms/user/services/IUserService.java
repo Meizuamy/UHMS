@@ -1,10 +1,8 @@
 package org.uhms.user.services;
 
-import com.github.pagehelper.Page;
-import com.github.pagehelper.PageInfo;
-import org.uhms.user.models.User;
-
 import java.util.List;
+
+import org.uhms.user.models.User;
 
 public interface IUserService {
 
@@ -16,5 +14,5 @@ public interface IUserService {
 
     List<User> pageUserList(int page,int size);
 
-    Integer deleteUser(Long id);
+    Integer deleteUser(int id);
 }

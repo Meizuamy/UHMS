@@ -25,7 +25,7 @@ public class UserServiceApplicationTest {
 
     @Test
     public void test_select_user_by_user_id() {
-        User user = userMapper.getUser(1L);
+        User user = userMapper.getUser(1);
         assertNotNull(user);
         log.debug("UserInfo is : {}", user);
     }
@@ -50,7 +50,7 @@ public class UserServiceApplicationTest {
             log.info("Find User By Name: ", u);
         }
 
-        log.info("Find User By Id: {}", userMapper.getUser(1L));
+        log.info("Find User By Id: {}", userMapper.getUser(1));
     }
 
 }

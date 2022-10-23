@@ -21,13 +21,13 @@ spring:
     servlet:
       content-type: text/html
 
-#eureka:
-#  client:
-#    service-url:
-#      defaultZone: http://localhost:8761/eureka/
-#  instance:
-#    hostname: localhost
-#    prefer-ip-address: true
+eureka:
+ client:
+   service-url:
+     defaultZone: http://localhost:8761/eureka/
+ instance:
+   hostname: localhost
+   prefer-ip-address: true
 
 mybatis:
   type-aliases-package: org.uhms.user.models
