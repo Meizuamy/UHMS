@@ -31,7 +31,7 @@
         <spring.cloud.version>2.2.0.RELEASE</spring.cloud.version>
         <mysql.version>8.0.28</mysql.version>
         <mybatis.version>2.1.1</mybatis.version>
-        <mybatis.pagehelper.version>5.1.10</mybatis.pagehelper.version>
+        <mybatis.pagehelper.version>5.3.1</mybatis.pagehelper.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     </properties>
